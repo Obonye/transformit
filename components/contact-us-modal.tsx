@@ -3,13 +3,11 @@ import {
   ModalContent,
   ModalHeader,
   ModalBody,
-  ModalFooter,
   useDisclosure,
 } from "@heroui/modal";
 import React from "react";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { Divider } from "@heroui/divider";
 import { Image } from "@heroui/image";
 export default function ContactUsModal() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -17,17 +15,17 @@ export default function ContactUsModal() {
   return (
     <>
       <Button
+        className="text-sm font-normal text-white bg-custom-dark-blue rounded-none"
         radius="none"
         onPress={onOpen}
-        className="text-sm font-normal text-white bg-custom-dark-blue rounded-none"
       >
         Contact Us
       </Button>
       <Modal
         isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        radius="none"
         placement="center"
+        radius="none"
+        onOpenChange={onOpenChange}
       >
         <ModalContent>
           {(onClose) => (
@@ -35,12 +33,12 @@ export default function ContactUsModal() {
               <ModalHeader className="flex flex-col gap-1">
                 Contact Us
                 <Image
-                  height={200}
-                  width={400}
-                  radius="none"
                   alt="team in office"
                   className="z-0 w-full h-full object-cover object-top"
+                  height={200}
+                  radius="none"
                   src={"/Animated Professional Team in Office.jpeg"}
+                  width={400}
                 />
               </ModalHeader>
               <ModalBody className="flex flex-col gap-4 items-center ">

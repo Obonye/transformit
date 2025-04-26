@@ -26,7 +26,7 @@ async function getPosts() {
     }
   `,
     {},
-    { next: { revalidate: 60 } }
+    { next: { revalidate: 60 } },
   );
 }
 

@@ -27,7 +27,7 @@ export const Navbar = () => {
     e:
       | React.MouseEvent<HTMLAnchorElement, MouseEvent>
       | React.MouseEvent<HTMLButtonElement, MouseEvent>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     const element = document.querySelector(href);
@@ -68,7 +68,7 @@ export const Navbar = () => {
             <Link
               className={clsx(
                 linkStyles({ color: "foreground" }),
-                "data-[active=true]:text-primary data-[active=true]:font-medium cursor-pointer"
+                "data-[active=true]:text-primary data-[active=true]:font-medium cursor-pointer",
               )}
               color="foreground"
               href={item.href}
@@ -105,7 +105,7 @@ export const Navbar = () => {
             <Link
               className={clsx(
                 linkStyles({ color: "foreground" }),
-                "w-full text-lg cursor-pointer"
+                "w-full text-lg cursor-pointer",
               )}
               href={item.href}
               onClick={(e) => handleClick(e, item.href)}

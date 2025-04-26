@@ -1,8 +1,10 @@
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
 import Link from "next/link";
 import { type SanityDocument } from "next-sanity";
-import { client } from "@/sanity/client";
-import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import imageUrlBuilder from "@sanity/image-url";
+
+import { client } from "@/sanity/client";
 
 const POST_OF_DAY_QUERY = `*[_type == "post" && isFeatured==true] | order(_createdAt desc)[0]{
   _id,
@@ -30,7 +32,7 @@ export default async function PostOfTheDay() {
   const post = await client.fetch<SanityDocument>(
     POST_OF_DAY_QUERY,
     {},
-    options
+    options,
   );
 
   const postImageUrl = post.image
@@ -47,16 +49,16 @@ export default async function PostOfTheDay() {
         </h2>
       </div>
 
-      <Link href={`/${post.slug.current}`} className="group">
+      <Link className="group" href={`/${post.slug.current}`}>
         <div className="flex flex-col lg:flex-row gap-4 transition-transform duration-300 hover:scale-[0.99] hover:bg-default-100 p-2">
           {postImageUrl ? (
             <div className="w-full lg:w-1/2 h-[250px] md:h-[300px] lg:h-[400px] overflow-hidden">
               <img
-                src={postImageUrl}
                 alt={post.title}
                 className="w-full h-full object-cover"
-                width="800"
                 height="400"
+                src={postImageUrl}
+                width="800"
               />
             </div>
           ) : (
@@ -72,7 +74,7 @@ export default async function PostOfTheDay() {
                   >
                     {tag.name}
                   </span>
-                )
+                ),
               )}
             </div>
 

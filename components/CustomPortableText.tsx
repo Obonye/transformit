@@ -1,10 +1,12 @@
 // lib/components/PortableTextComponent.tsx
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
-import { client } from "@/sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
-import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
+import { client } from "@/sanity/client";
 
 const { projectId, dataset } = client.config();
 const urlFor = (source: SanityImageSource) =>
@@ -21,7 +23,7 @@ const components = {
 
       return (
         <div className="relative w-full h-[400px] my-8">
-          <Image src={imageUrl} alt={""} fill className="object-cover" />
+          <Image fill alt={""} className="object-cover" src={imageUrl} />
         </div>
       );
     },
@@ -50,11 +52,12 @@ const components = {
       const rel = !value.href.startsWith("/")
         ? "noreferrer noopener"
         : undefined;
+
       return (
         <Link
+          className="text-blue-600 hover:underline"
           href={value.href}
           rel={rel}
-          className="text-blue-600 hover:underline"
         >
           {children}
         </Link>
@@ -84,5 +87,5 @@ const components = {
 };
 
 export function PortableTextComponent({ value }: { value: any }) {
-  return <PortableText value={value} components={components} />;
+  return <PortableText components={components} value={value} />;
 }

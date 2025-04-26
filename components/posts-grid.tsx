@@ -76,7 +76,7 @@ export default async function PostsGrid() {
                       >
                         {tag.name}
                       </span>
-                    )
+                    ),
                   )}
                 </div>
                 <h3 className="flex flex-col items-start text-base font-bold group-hover:text-custom-dark-blue transition-colors">

@@ -81,9 +81,9 @@ const TrustedBy: React.FC = () => {
           {trustedCompanies.map((company, index) => (
             <div key={index} className="w-12 h-12 relative group">
               <img
-                src={company.src}
                 alt={company.alt}
                 className="w-full h-full object-contain rounded-full border border-gray-200 transition-transform duration-300 group-hover:scale-110"
+                src={company.src}
               />
             </div>
           ))}

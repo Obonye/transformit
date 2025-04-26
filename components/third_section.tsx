@@ -1,16 +1,15 @@
 import React from "react";
-import { Image } from "@heroui/image";
 
 function ThirdSection() {
   return (
-    <div id="about" className="flex flex-col lg:flex-row w-full h-full">
+    <div className="flex flex-col lg:flex-row w-full h-full" id="about">
       {/* Image Section */}
       <div
         className="flex-1 w-full h-full lg:h-[400px] min-h-[400px] flex overflow-hidden"
         style={{
           backgroundImage: "url('/team.jpeg')",
         }}
-      ></div>
+      />
 
       {/* Content Section */}
       <div className="flex-1 flex flex-col justify-center items-start p-6 bg-darker-black text-custom-light-blue h-full lg:h-[400px] min-h-[400px]">

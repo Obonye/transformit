@@ -9,6 +9,7 @@ import {
   Instagram,
   ArrowUpCircle,
 } from "lucide-react";
+
 import { siteConfig } from "@/config/site";
 
 interface ContactInfo {
@@ -39,33 +40,33 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4">
               {siteConfig.links.facebook && (
                 <a
-                  href={siteConfig.links.facebook}
                   aria-label="Facebook"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="hover:text-custom-dark-blue"
+                  href={siteConfig.links.facebook}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
               )}
               {siteConfig.links.linkedin && (
                 <a
-                  href={siteConfig.links.linkedin}
                   aria-label="LinkedIn"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="hover:text-custom-dark-blue"
+                  href={siteConfig.links.linkedin}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
               )}
               {siteConfig.links.instagram && (
                 <a
-                  href={siteConfig.links.instagram}
                   aria-label="Instagram"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="hover:text-custom-dark-blue"
+                  href={siteConfig.links.instagram}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
@@ -79,7 +80,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {siteConfig.navItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.href} className="hover:text-custom-dark-blue">
+                  <a className="hover:text-custom-dark-blue" href={item.href}>
                     {item.label}
                   </a>
                 </li>
@@ -116,16 +117,16 @@ const Footer: React.FC = () => {
             reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="/privacy" className="hover:text-custom-dark-blue">
+            <a className="hover:text-custom-dark-blue" href="/privacy">
               Privacy Policy
             </a>
-            <a href="/terms" className="hover:text-custom-dark-blue">
+            <a className="hover:text-custom-dark-blue" href="/terms">
               Terms of Service
             </a>
             <button
-              onClick={scrollToTop}
-              className="hover:text-custom-dark-blue flex items-center space-x-1"
               aria-label="Scroll to top"
+              className="hover:text-custom-dark-blue flex items-center space-x-1"
+              onClick={scrollToTop}
             >
               <ArrowUpCircle className="w-4 h-4" />
               <span>Back to Top</span>

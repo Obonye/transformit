@@ -75,7 +75,7 @@ export default async function BlogPage() {
                       >
                         {tag.name}
                       </span>
-                    )
+                    ),
                   )}
                 </div>
 

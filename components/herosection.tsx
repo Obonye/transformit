@@ -23,14 +23,14 @@ function HeroSection() {
           <div className="flex gap-4 mt-4">
             <Link
               isExternal
-              href="https://cal.com/monkgogi-moshaga-9bp2as"
               className="px-6 py-3 bg-custom-dark-blue text-white hover:bg-custom-reddish-pink rounded-none  hover:shadow-[4px_4px_0px_0px_#4392AC] transition-all"
+              href="https://cal.com/monkgogi-moshaga-9bp2as"
             >
               Schedule a Call
             </Link>
             <Link
-              href="#services"
               className="px-6 py-3 border-2 border-white text-white hover:bg-white hover:text-custom-dark-blue transition-colors"
+              href="#services"
             >
               Explore Services
             </Link>
