@@ -49,7 +49,7 @@ export default async function BlogPage() {
           return (
             <Link
               key={post._id}
-              className="group text-left flex flex-col  hover:shadow-lg transition-shadow duration-200"
+              className="group text-left flex flex-col  hover:bg-default-100 transition-shadow duration-200"
               href={`/${post.slug.current}`}
             >
               {postImageUrl ? (

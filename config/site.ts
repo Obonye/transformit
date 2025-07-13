@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "TransformIT",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "Expanding business margins and brand impact through tailored social media, compliance, and smart operational strategy.",
   navItems: [
     {
       label: "Services",

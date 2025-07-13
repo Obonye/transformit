@@ -79,7 +79,7 @@ export default async function PostsGrid() {
                     ),
                   )}
                 </div>
-                <h3 className="flex flex-col items-start text-base font-bold group-hover:text-custom-dark-blue transition-colors">
+                <h3 className="flex flex-col items-start text-base text-left  font-bold group-hover:text-custom-dark-blue transition-colors">
                   {post.title}
                 </h3>
                 <p className="text-sm text-start text-gray-600">
@@ -93,7 +93,7 @@ export default async function PostsGrid() {
 
       <div className="mt-8 text-center">
         <Link
-          className="inline-block px-6 py-2 border border-gray-200 hover:bg-gray-50 transition-colors"
+          className="inline-block px-6 py-2 border border-gray-200 hover:bg-gray-50 transition-colors text-base"
           href="/blog/posts"
         >
           View All Posts
