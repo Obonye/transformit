@@ -1,19 +1,7 @@
-import { type SanityDocument } from "next-sanity";
-
-import { client } from "@/sanity/client";
 import PostOfTheDay from "@/components/post_of_the_day";
 import PostsGrid from "@/components/posts-grid";
 import RecentPosts from "@/components/recent-posts";
-
-const POSTS_QUERY = `*[
-  _type == "post"
-  && defined(slug.current)
-]|order(publishedAt desc)[0...12]{_id, title, slug, publishedAt, tags}`;
-
-const options = { next: { revalidate: 30 } };
-
 export default async function IndexPage() {
-
   return (
     <main className="container mx-auto min-h-screen max-w-screen p-8">
       <h1 className="text-4xl font-bold mb-8 text-left">Value Hub</h1>
