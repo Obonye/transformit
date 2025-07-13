@@ -19,11 +19,11 @@ interface ContactInfo {
 }
 
 const Footer: React.FC = () => {
-const contactInfo: ContactInfo = {
-  phone: "+267  311 67 64\nor +267 71 567 840",
-  email: "letstransform@transformit.co.bw",
-  address: "Fabrics Building, Plot 1269, Old Lobatse Road, SISMO, Gaborone",
-};
+  const contactInfo: ContactInfo = {
+    phone: "+267  311 67 64\nor +267 71 567 840",
+    email: "letstransform@transformit.co.bw",
+    address: "Fabrics Building, Plot 1269, Old Lobatse Road, SISMO, Gaborone",
+  };
 
   const scrollToTop = (): void => {
     window.scrollTo({ top: 0, behavior: "smooth" });

@@ -1,5 +1,4 @@
 // app/feed/page.tsx
-"use client";
 import { client } from "@/sanity/client";
 import SocialMediaEmbed from "@/components/social-media-embed";
 

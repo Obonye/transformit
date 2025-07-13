@@ -28,7 +28,7 @@ export default function ContactUsModal() {
         onOpenChange={onOpenChange}
       >
         <ModalContent>
-          {(onClose) => (
+          {(_onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
                 Contact Us
