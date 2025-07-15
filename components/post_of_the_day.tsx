@@ -35,11 +35,11 @@ export default async function PostOfTheDay() {
     options,
   );
 
+  if (!post) return null;
+
   const postImageUrl = post.image
     ? urlFor(post.image)?.width(800).height(400).url()
     : null;
-
-  if (!post) return <div>No featured post available</div>;
 
   return (
     <div className="flex flex-col w-full justify-start gap-0 py-4 md:py-8">
