@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a 
+                <a
                   className="hover:text-custom-dark-blue flex items-center space-x-2"
                   href="https://drive.google.com/file/d/1SSGVGR85aRrLBClqmkSByxGRj833NVD_/view?usp=sharing"
                   rel="noopener noreferrer"
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a 
+                <a
                   className="hover:text-custom-dark-blue flex items-center space-x-2"
                   href="https://drive.google.com/file/d/1SSGVGR85aRrLBClqmkSByxGRj833NVD_/view?usp=sharing"
                   rel="noopener noreferrer"
