@@ -28,7 +28,7 @@ const trustedCompanies: TrustedLogoProps[] = [
   },
   {
     src: "/IEP.png",
-    alt: "Furniture Paradise",
+    alt: "Institute of entrepreneurial development",
   },
   {
     src: "/SAIS.png",
@@ -36,7 +36,7 @@ const trustedCompanies: TrustedLogoProps[] = [
   },
   {
     src: "/black.jpg",
-    alt: "SAIS",
+    alt: "Black",
   },
   {
     src: "/boardmaster.png",
@@ -70,6 +70,23 @@ const trustedCompanies: TrustedLogoProps[] = [
     src: "/tyremart.png",
     alt: "Tyre-mart",
   },
+  {
+    src:"/bb logo.png",
+    alt:"Business Botswana"
+  },
+  {
+    src:"/gdg.png",
+    alt:"Google Developers Group"
+  },
+  {
+    src:"/HCIB.jpg",
+    alt:"High Commission Of India Botswana"
+  },
+  {
+    src:"/PACCI.png",
+    alt:"Pan African Chamber Of Commerce and Industry"
+  },
+
 ];
 
 const TrustedBy: React.FC = () => {
@@ -84,6 +101,7 @@ const TrustedBy: React.FC = () => {
                 alt={company.alt}
                 className="w-full h-full object-contain rounded-full border border-gray-200 transition-transform duration-300 group-hover:scale-110"
                 src={company.src}
+                title={company.alt}
               />
             </div>
           ))}

@@ -8,6 +8,7 @@ import {
   Linkedin,
   Instagram,
   ArrowUpCircle,
+  FileText,
 } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
@@ -85,6 +86,35 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div className="space-y-4">
+            <h4 className="font-semibold">Resources</h4>
+            <ul className="space-y-2">
+              <li>
+                <a 
+                  className="hover:text-custom-dark-blue flex items-center space-x-2"
+                  href="https://drive.google.com/file/d/1SSGVGR85aRrLBClqmkSByxGRj833NVD_/view?usp=sharing"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FileText className="w-4 h-4" />
+                  <span>Portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  className="hover:text-custom-dark-blue flex items-center space-x-2"
+                  href="https://drive.google.com/file/d/1SSGVGR85aRrLBClqmkSByxGRj833NVD_/view?usp=sharing"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FileText className="w-4 h-4" />
+                  <span>Company Profile</span>
+                </a>
+              </li>
             </ul>
           </div>
 
