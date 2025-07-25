@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   className="hover:text-custom-dark-blue flex items-center space-x-2"
-                  href="https://drive.google.com/file/d/1SSGVGR85aRrLBClqmkSByxGRj833NVD_/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1XFdnow9exkjI60FXzQv08HLh7ipgj0ev/view?usp=sharing"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
