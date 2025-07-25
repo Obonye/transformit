@@ -71,22 +71,21 @@ const trustedCompanies: TrustedLogoProps[] = [
     alt: "Tyre-mart",
   },
   {
-    src:"/bb logo.png",
-    alt:"Business Botswana"
+    src: "/bb logo.png",
+    alt: "Business Botswana",
   },
   {
-    src:"/gdg.png",
-    alt:"Google Developers Group"
+    src: "/gdg.png",
+    alt: "Google Developers Group",
   },
   {
-    src:"/HCIB.jpg",
-    alt:"High Commission Of India Botswana"
+    src: "/HCIB.jpg",
+    alt: "High Commission Of India Botswana",
   },
   {
-    src:"/PACCI.png",
-    alt:"Pan African Chamber Of Commerce and Industry"
+    src: "/PACCI.png",
+    alt: "Pan African Chamber Of Commerce and Industry",
   },
-
 ];
 
 const TrustedBy: React.FC = () => {
