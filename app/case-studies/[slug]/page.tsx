@@ -40,13 +40,14 @@ const urlFor = (source: SanityImageSource) =>
     : null;
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export default async function CaseStudyPage({ params }: Props) {
+  const { slug } = await params;
   const caseStudy = await client.fetch<SanityDocument>(
     CASE_STUDY_QUERY,
-    { slug: params.slug },
+    { slug },
     options,
   );
 
