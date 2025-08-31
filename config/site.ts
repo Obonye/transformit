@@ -20,6 +20,10 @@ export const siteConfig = {
       label: "Value Hub",
       href: "/blog",
     },
+    {
+      label: "Portfolio",
+      href: "/coms",
+    },
   ],
   navMenuItems: [
     {

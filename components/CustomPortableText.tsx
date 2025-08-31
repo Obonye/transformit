@@ -39,7 +39,7 @@ const components = {
       <h3 className="text-2xl font-bold mt-6 mb-3">{children}</h3>
     ),
     normal: ({ children }: any) => (
-      <p className=" text-white mb-4 leading-relaxed">{children}</p>
+      <p className=" text-gray-600 mb-4 leading-relaxed">{children}</p>
     ),
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-4 border-gray-200 pl-4 my-4 italic">
