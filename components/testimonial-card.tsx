@@ -9,7 +9,7 @@ function TestimonialCard({
   avatarUrl = "https://i.pravatar.cc/150?u=a042581f4e29026704d",
 }) {
   return (
-    <Card className="max-w-[320px] rounded-none">
+    <Card className="max-w-[320px] rounded-md">
       <CardHeader className="flex flex-row items-center gap-4">
         <Avatar showFallback size="md" src={avatarUrl} />
         <div>

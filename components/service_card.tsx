@@ -20,7 +20,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <Card
       className={"bg-transparent relative group  " + className}
-      radius="none"
+      radius="md"
       shadow="none"
     >
       <CardBody className="relative overflow-hidden h-80">
@@ -35,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
       </CardBody>
       <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-[18px] text-custom-light-sky-blue uppercase font-bold">
+        <p className="text-[18px] text-custom-dark-blue uppercase font-bold">
           {title}
         </p>
       </CardFooter>

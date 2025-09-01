@@ -2,7 +2,7 @@ import { Link } from "@heroui/link";
 function HeroSection() {
   return (
     <section
-      className="w-full min-h-screen min-h-screen bg-cover bg-center bg-no-repeat grid place-items-center"
+      className="w-full min-h-screen bg-cover bg-center bg-no-repeat grid place-items-center"
       style={{
         backgroundImage: "url('/Stairway to the Moon.jpeg')",
         backgroundBlendMode: "darken",
