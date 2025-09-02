@@ -105,8 +105,8 @@ const Services2 = () => {
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${expandedItem === index ? "max-h-96" : "max-h-0"
                   }`}
               >
-                <div className="px-6 py-4 bg-custom-light-sky-blue border-t border-gray-200">
-                  <p className="text-gray-700 leading-relaxed">
+                <div className="px-6 py-4  border-t border-gray-200">
+                  <p className=" leading-relaxed text-gray-500">
                     {service.content}
                   </p>
                 </div>

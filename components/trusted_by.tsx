@@ -93,7 +93,7 @@ const trustedCompanies: TrustedLogoProps[] = [
 
 const TrustedBy: React.FC = () => {
   return (
-    <section className="py-32 px-4 bg-custom-dark-blue relative" >
+    <section className="py-24 px-4 bg-custom-dark-blue relative" >
       <div className="container mx-auto relative z-10">
         <h2 className="text-4xl font-medium text-center text-custom-light-sky-blue mb-8 ">Join Industry Leaders Who Trust Our
           Solutions<span className="text-custom-reddish-pink">.</span></h2>
@@ -102,7 +102,7 @@ const TrustedBy: React.FC = () => {
         </div>
 
       </div>
-      <div 
+      <div
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='discrete' tableValues='0 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' fill='%23F76A73'/%3E%3C/svg%3E\")",
