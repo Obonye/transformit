@@ -64,21 +64,21 @@ const Services2 = () => {
         In Detail<span className="text-custom-reddish-pink">.</span>
       </h2>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8  items-start">
-        {/* Image Section */}
-        <div className="w-full flex justify-center lg:justify-center">
-          <div className="relative w-full max-w-md">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        {/* Image Section - UPDATED */}
+        <div className="lg:col-span-6 w-full">
+          <div className="relative">
             <Image
               alt={services[selectedService].title}
-              className="w-full h-[525px] object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out"
+              className="w-[525px] h-[525px] object-cover rounded-lg shadow-lg transition-all duration-500 ease-in-out"
               src={services[selectedService].image}
               radius="lg"
             />
-
           </div>
         </div>
-        {/* Accordion Section */}
-        <div className="w-full">
+
+        {/* Accordion Section - UPDATED */}
+        <div className="lg:col-span-6 w-full">
           {services.map((service, index) => (
             <div
               key={index}
@@ -86,7 +86,7 @@ const Services2 = () => {
             >
               <button
                 onClick={() => handleAccordionClick(index)}
-                className="w-full px-6 py-4 text-left  hover:bg-default transition-colors duration-200 flex items-center justify-between"
+                className="w-full px-6 py-4 text-left hover:bg-default transition-colors duration-200 flex items-center justify-between"
               >
                 <div>
                   <h3 className="font-semibold text-lg">
@@ -105,8 +105,8 @@ const Services2 = () => {
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${expandedItem === index ? "max-h-96" : "max-h-0"
                   }`}
               >
-                <div className="px-6 py-4  border-t border-gray-200">
-                  <p className=" leading-relaxed text-gray-500">
+                <div className="px-6 py-4 border-t border-gray-200">
+                  <p className="leading-relaxed text-gray-500">
                     {service.content}
                   </p>
                 </div>
@@ -114,8 +114,6 @@ const Services2 = () => {
             </div>
           ))}
         </div>
-
-
       </div>
     </section>
   );
