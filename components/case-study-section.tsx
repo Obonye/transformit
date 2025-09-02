@@ -2,6 +2,7 @@ import React from "react";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import CaseStudyCard from "./case-study-card";
+import { Link } from "@heroui/link";
 
 interface CaseStudy {
     _id: string;
@@ -64,11 +65,11 @@ export default async function CaseStudySection() {
     }
 
     return (
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-custom-dark-blue w-full">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-custom-light-blue">Case Studies<span className="text-custom-reddish-pink">.</span></h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-custom-light-sky-blue">Case Studies<span className="text-custom-reddish-pink">.</span></h2>
+                    <p className="text-lg text-gray-200 max-w-2xl mx-auto">
                         See how we've helped businesses achieve their goals.
                     </p>
                 </div>
@@ -85,6 +86,15 @@ export default async function CaseStudySection() {
                             slug={caseStudy.slug}
                         />
                     ))}
+                </div>
+
+                <div className="text-center mt-12">
+                    <Link
+                        href="/case-studies"
+                        className="px-8 py-3 bg-custom-reddish-pink text-white hover:bg-custom-light-sky-blue rounded-none hover:shadow-[4px_4px_0px_0px_#4392AC] transition-all duration-300 font-medium"
+                    >
+                        View All Case Studies
+                    </Link>
                 </div>
             </div>
         </section>

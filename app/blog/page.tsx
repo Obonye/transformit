@@ -4,7 +4,7 @@ import RecentPosts from "@/components/recent-posts";
 export default async function IndexPage() {
   return (
     <main className="container mx-auto min-h-screen max-w-screen p-8">
-      <h1 className="text-4xl font-bold mb-8 text-left">Value Hub</h1>
+      <h1 className="text-4xl font-bold mb-8 text-left text-custom-light-blue">Value Hub <span className="text-custom-reddish-pink">.</span></h1>
 
       <PostOfTheDay />
 

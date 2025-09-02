@@ -2,6 +2,7 @@ import React from 'react'
 import { Image } from "@heroui/image";
 import { Link } from "@heroui/link";
 import CaseStudySection from '@/components/case-study-section';
+import Gallery from '@/components/Gallery';
 
 function BrandComms() {
     return (
@@ -64,7 +65,13 @@ function BrandComms() {
                     </div>
                 </div>
             </section>
+
+            <Gallery
+                title="Gallery"
+                subtitle="Explore our creative brand communications work and campaigns"
+            />
             <CaseStudySection></CaseStudySection>
+
         </div>
     )
 }
