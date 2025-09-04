@@ -24,7 +24,7 @@ function ValueProps() {
   return (
     <section className="px-4 md:px-6 py-12" id="process">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-medium text-center mb-8 md:mb-12">
+        <h1 className="text-4xl font-medium text-center mb-8 md:mb-12 text-custom-light-blue">
           The Right Solution For Your Business
           <span className="text-custom-reddish-pink">.</span>
         </h1>

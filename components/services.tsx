@@ -7,7 +7,7 @@ const ServicesGrid = () => {
     {
       title: "Data Analytics",
       description: "Transform your data into actionable insights",
-      backgroundImage: "/data_face.jpg",
+      backgroundImage: "/BA.png",
       overlayText:
         "Leverage advanced analytics and visualization tools to extract meaningful insights from your data. Our data analytics services help you make data-driven decisions.",
       className: "col-span-1 sm:col-span-1",
@@ -15,7 +15,7 @@ const ServicesGrid = () => {
     {
       title: "ICT Infrastructure",
       description: "Build robust IT infrastructure solutions",
-      backgroundImage: "/infrastructure.jpg",
+      backgroundImage: "/infra.png",
       overlayText:
         "Design and implement scalable IT infrastructure solutions that ensure business continuity and operational efficiency.",
       className: "col-span-1 sm:col-span-1 ",
@@ -23,7 +23,7 @@ const ServicesGrid = () => {
     {
       title: "Digital Marketing",
       description: "Enhance your digital presence",
-      backgroundImage: "/Digital Marketing.jpeg",
+      backgroundImage: "/dm.png",
       overlayText:
         "Boost your online visibility with comprehensive digital marketing strategies, including SEO, social media, and content marketing.",
       className: "col-span-1 sm:col-span-1 ",
@@ -31,7 +31,7 @@ const ServicesGrid = () => {
     {
       title: "Corporate Governance",
       description: "Ensure regulatory compliance",
-      backgroundImage: "/corporate.jpg",
+      backgroundImage: "/gov.png",
       overlayText:
         "Implement effective governance frameworks and ensure compliance with regulatory requirements while maintaining operational excellence.",
       className: "relative col-span-1 sm:col-span-1",
@@ -39,7 +39,7 @@ const ServicesGrid = () => {
     {
       title: "Soft Skills Training",
       description: "Enhance team capabilities",
-      backgroundImage: "/soft skills.jpg",
+      backgroundImage: "/softk.png",
       overlayText:
         "Develop your team's interpersonal, communication, and leadership skills through comprehensive training programs.",
       className: "relative col-span-1 sm:col-span-1 h-fill ",
@@ -47,7 +47,7 @@ const ServicesGrid = () => {
     {
       title: "Records Management",
       description: "Organize and secure your data",
-      backgroundImage: "/records.jpg",
+      backgroundImage: "/records managment.png",
       overlayText:
         "Implement efficient records management systems to organize, store, and secure your data, ensuring easy access and compliance with data protection regulations.",
       className: " relative col-span-1 row-span-1 sm:col-span-1 ",
@@ -55,8 +55,8 @@ const ServicesGrid = () => {
   ];
 
   return (
-    <section className=" mx-0 w-full py-16 px-16 bg-darker-black" id="services">
-      <h2 className="text-3xl font-medium text-center mb-12 text-custom-light-sky-blue">
+    <section className=" mx-0 w-full py-16 px-16 " id="services">
+      <h2 className="text-3xl font-medium text-center mb-12 text-darker-black">
         Unlock Your <span className="text-custom-reddish-pink">Potential</span>{" "}
         With Our Services
       </h2>
