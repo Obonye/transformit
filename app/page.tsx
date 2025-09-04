@@ -18,7 +18,7 @@ export default function Home() {
         <TrustedBy />
       </section>
 
-      <section id="services2">
+      <section id="services">
         <Services2 />
       </section>
       <section id="process">
