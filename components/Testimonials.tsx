@@ -31,7 +31,7 @@ function Testimonials() {
     <section className="px-4 md:px-6 py-12 flex flex-col items-center">
       <div className="container mx-auto">
         <h2 className="text-4xl font-medium text-center mb-6 text-custom-light-blue">
-          What Our Clients Say
+          What Our Clients Say<span className="text-custom-reddish-pink">.</span>
         </h2>
       </div>
 

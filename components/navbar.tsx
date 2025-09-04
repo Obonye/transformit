@@ -30,8 +30,15 @@ export const Navbar = () => {
     href: string,
   ) => {
     e.preventDefault();
+    
+    // Handle external routes (start with /)
+    if (href.startsWith('/') && !href.startsWith('/#')) {
+      window.location.href = href;
+      return;
+    }
+    
+    // Handle anchor links (for smooth scrolling)
     const element = document.querySelector(href);
-
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMenuOpen(false);
