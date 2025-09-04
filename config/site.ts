@@ -22,7 +22,7 @@ export const siteConfig = {
     },
     {
       label: "Portfolio",
-      href: "/coms",
+      href: "/brand-comms",
     },
   ],
   navMenuItems: [
@@ -42,6 +42,10 @@ export const siteConfig = {
       label: "Value Hub",
       href: "/blog",
     },
+    {
+      label: "Portfolio",
+      href: "/brand-comms",
+    }
   ],
   links: {
     instagram:

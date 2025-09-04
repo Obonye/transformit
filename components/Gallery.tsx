@@ -66,30 +66,12 @@ export default async function Gallery({
   );
 
   if (!galleryItems || galleryItems.length === 0) {
-    return (
-      <section className={`py-16 px-4 ${className}`}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-custom-light-blue">
-              {title}
-            </h2>
-            {subtitle && (
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                {subtitle}
-              </p>
-            )}
-          </div>
-          <div className="text-center">
-            <p className="text-gray-500">No gallery items available at the moment.</p>
-          </div>
-        </div>
-      </section>
-    );
+    return null;
   }
 
   return (
     <section className={`py-16 px-4 ${className}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-custom-light-blue">
             {title}<span className="text-custom-reddish-pink">.</span>
@@ -102,7 +84,7 @@ export default async function Gallery({
         </div>
 
         {/* === THE ONLY LINE THAT CHANGED IS HERE === */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {galleryItems.map((item: any) => (
             <div
               key={item._id}
