@@ -5,21 +5,21 @@ import TestimonialCard from "../components/testimonial-card";
 function Testimonials() {
   const testimonials = [
     {
-      name: "Dr. Thabani Mongwa",
+      name: "ShieldVet",
       role: "General Manager",
       testimonial:
         "We have always found that Transform IT provides just the right balance of professionalism, creativity and customer service to suit our needs. Having worked with them since 2018 across social media, print, and videography projects, they continue to deliver outstanding results. Our new endeavors are also under their passionate service delivery.",
       avatarUrl: "https://images.unsplash.com/broken",
     },
     {
-      name: "Kalpesh Naik",
+      name: "Timber City Botswana",
       role: "Managing Director, Timber City Botswana",
       testimonial:
         "Transform IT's attention to detail during the design process consistently surpasses our expectations. Their deep understanding of our brand and business environment, combined with excellent analytics and reporting, has been invaluable for our communication strategies since 2019.",
       avatarUrl: "https://images.unsplash.com/broken",
     },
     {
-      name: "Thabiso Mabaka",
+      name: "eMotshelo",
       role: "Director, eMotshelo (Pty) Ltd",
       testimonial:
         "Transform IT's expertise in Application Development Testing has been exceptional. Their attention to detail and understanding of user requirements, combined with excellent stakeholder management, has been crucial in delivering quality ICT applications. Their passion for ICT projects and value-driven approach sets them apart.",

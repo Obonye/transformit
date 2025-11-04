@@ -21,9 +21,9 @@ interface ContactInfo {
 
 const Footer: React.FC = () => {
   const contactInfo: ContactInfo = {
-    phone: "+267  311 67 64\nor +267 71 567 840",
+    phone: "+26778554000",
     email: "letstransform@transformit.co.bw",
-    address: "Fabrics Building, Plot 1269, Old Lobatse Road, SISMO, Gaborone",
+    address: "Plot 26444, Gaborone 3163499",
   };
 
   const scrollToTop = (): void => {
